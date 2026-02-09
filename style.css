@@ -4,13 +4,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: 
-        url("heart-bg.gif");
+
+    background-image: url("heart-bg.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   /* 👈 fills whole screen */
+
     font-family: "Pixelify Sans", sans-serif;
-    background-size: 
-        contain,   /* main GIF */
-        cover;     /* base image fills screen */
 }
+
 
 /* Envelope Screen */
 #envelope-container {
@@ -103,6 +105,7 @@ p {
 
 .no-wrapper{
     position:relative;
+    animation: pulse 1.5s infinite;
 }
 
 .btn {
@@ -130,6 +133,7 @@ display: inline-block;
     position: relative;
     transition: transform 0.15s ease;
     cursor: default;
+    
 }
 
 .final-text{
